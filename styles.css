@@ -15,16 +15,25 @@ body {
     /* min-height: 100vh; */
 }
 
-.nav-bar{
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.nav-bar {
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-left: 50px;
-    
+
 }
 
-.nav-joint{
+.nav-joint {
     font-size: 3rem;
     background-color: rgb(49, 48, 48);
     color: #fff;
@@ -32,12 +41,12 @@ body {
     text-decoration: none;
 }
 
-.nav-joint:hover{
+.nav-joint:hover {
     background: grey;
-} 
+}
 
 
-.homers-web-classic{
+.homers-web-classic {
     position: relative;
     width: 100%;
     max-width: 1400px;
@@ -50,7 +59,7 @@ body {
 
 }
 
-.homers-web-toasts{
+.homers-web-toasts {
     position: relative;
     width: 100%;
     max-width: 1400px;
@@ -62,7 +71,7 @@ body {
     padding-bottom: 100px;
 }
 
-.homers-web-worms{
+.homers-web-worms {
     position: relative;
     width: 100%;
     max-width: 1400px;
@@ -74,7 +83,7 @@ body {
     padding-bottom: 100px;
 }
 
-.homers-web-mouths{
+.homers-web-mouths {
     position: relative;
     width: 100%;
     max-width: 1400px;
@@ -83,10 +92,10 @@ body {
     display: grid;
     grid-template-rows: 10% 90%;
     margin-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
-.tittle-homers{
+.tittle-homers {
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -97,98 +106,128 @@ body {
 
 }
 
-.main-homers{
+.main-homers {
     display: grid;
-    grid-template-areas: 
-    "clock empty empty empty empty"
-    "worm toast yisus worm1 toast1"
-    "toast2 mouth yisus bell mouth1"
-    "bell1 clock1 yisus toast3 clock2"
-    "worm2 worm3 yisus empty1 empty1"
+    grid-template-areas:
+        "clock empty empty empty empty"
+        "worm toast yisus worm1 toast1"
+        "toast2 mouth yisus bell mouth1"
+        "bell1 clock1 yisus toast3 clock2"
+        "worm2 worm3 yisus empty1 empty1"
     ;
     padding-left: 30px;
     /* grid-template-columns: ; */
 }
 
-.empty{
+.empty {
     grid-area: empty;
     height: 50px;
 }
 
-.empty1{
+.empty1 {
     grid-area: empty1;
 }
 
-.yisus{
+.yisus {
     grid-area: yisus;
     align-self: center;
 }
 
-.clock{
+.clock {
     grid-area: clock;
     position: absolute;
     padding-top: 10px;
     padding-left: 170px;
 }
-.clock1{
+
+.clock1 {
     grid-area: clock1;
     position: absolute;
     padding-top: 10px;
     padding-left: 110px;
 }
-.clock2{
+
+.clock2 {
     grid-area: clock2;
 }
 
-.worm{
+.worm {
     grid-area: worm;
     position: absolute;
     padding-top: 50px;
 }
-.worm1{
+
+.worm1 {
     grid-area: worm1;
     position: absolute;
     padding-top: 40px;
 }
-.worm2{
+
+.worm2 {
     grid-area: worm2;
 }
-.worm3{
+
+.worm3 {
     grid-area: worm3;
 }
 
-.toast{
+.toast {
     grid-area: toast;
     position: absolute;
     padding-top: 50px;
     padding-left: 20px;
 }
-.toast1{
+
+.toast1 {
     grid-area: toast1;
-    
+
 }
-.toast2{
+
+.toast2 {
     grid-area: toast2;
     position: absolute;
     padding-top: 50px;
 }
-.toast3{
+
+.toast3 {
     grid-area: toast3;
 }
 
-.mouth{
+.mouth {
     grid-area: mouth;
     padding-top: 20px;
 }
-.mouth1{
+
+.mouth1 {
     grid-area: mouth1;
 }
 
-.bell{
+.bell {
     grid-area: bell;
 }
-.bell1{
+
+.bell1 {
     grid-area: bell1;
     /* padding-top: 50px; */
     padding-left: 150px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 3rem;
+    background-color: rgb(49, 48, 48);
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+footer a:hover {
+    background: grey;
 }
