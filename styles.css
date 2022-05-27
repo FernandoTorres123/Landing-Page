@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -144,7 +146,7 @@ main {
     grid-area: clock1;
     position: absolute;
     padding-top: 10px;
-    padding-left: 110px;
+    padding-left: 90px;
 }
 
 .clock2 {
@@ -231,3 +233,4 @@ footer a {
 footer a:hover {
     background: grey;
 }
+
